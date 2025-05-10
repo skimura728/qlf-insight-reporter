@@ -11,7 +11,4 @@ services:
         sync: false
       - key: GOOGLE_APPLICATION_CREDENTIALS
         value: /etc/secrets/qlf-key.json
-    secretFiles:
-      - path: /etc/secrets/qlf-key.json
-        name: qlf-key.json
     plan: free
