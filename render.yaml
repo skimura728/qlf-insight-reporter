@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: qlf-insight-reporter
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /etc/secrets/qlf-key.json
+      - key: NOTION_API_TOKEN
+        value: your-notion-api-token
+      - key: NOTION_PAGE_ID
+        value: your-notion-page-id
+    plan: free
+    env: python
+    region: singapore
+    autoDeploy: false

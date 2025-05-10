@@ -1,0 +1,6 @@
+flask
+google-cloud-bigquery
+pandas
+notion-client
+python-dotenv
+db-dtypes
