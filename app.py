@@ -42,8 +42,8 @@ def run_report():
 
     today = datetime.today().strftime("%Y-%m-%d")
     projects = {
-        "Android": ("qlf-analytics", "analytics_484729799"),
-        "Web": ("quicklearnfeed", "analytics_487953054")
+        "Web": ("qlf-analytics", "analytics_484729799"),
+        "Android": ("quicklearnfeed", "analytics_487953054")
     }
 
     blocks = [block_heading(f"QLF Report - {today}", level=2)]
